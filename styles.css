@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --titulos: #E1E1E6;
+    --textos: #A8A8B3;
+    --shape: #1F2729;
+    --background: #121414;
+    --yellow: #EBA417;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    background-color: var(--background);
+}
+body, input, text-area, button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--background);
+    border-bottom: 0.5px solid rgba(41, 41, 46, 1) ;
+}
+
+.header header {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.titleMenu {
+    display: flex;
+    gap: 1rem;
+    color: var(--titulos);
+    font-size: 1rem;
+    gap: 3.75rem;
+}
+
+.menuGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--titulos);
+}
+
+.header header button {
+    color: var(--titulos);
+    background-color: var(--shape);
+    padding: 1rem;
+    border-radius: 6.25rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.principalView {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--titulos);
+    margin-top: 3rem;
+}
+
+.apresentacao h4 {
+    animation: moveBanner 2s 0.5s forwards;
+
+}
+.apresentacao h1 {
+    font-size: 3rem;
+    animation: moveBanner 1.5s 0.7s forwards;
+
+}
+
+.apresentacao p     {
+    animation: moveBanner  1.5s 0.9s forwards;
+}
+
+.apresentacao button {
+    background-color: var(--yellow);
+    padding: 0.75rem;
+    border-radius: 6.25rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: white;
+    font-weight: 500;
+    margin-top: 2rem;
+    animation: moveBanner 1.5s 1s forwards;
+}
+
+@keyframes moveBanner {
+    0% {
+      transform: translateY(10rem) rotateY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotateY(0);
+      opacity: 1;
+    }
+  }
+  
